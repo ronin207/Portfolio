@@ -1,26 +1,159 @@
-.container{
-    display: table;
+.home {
+    align-items: flex-start;
+    background-color: white;
+    display: flex;
+    height: 1080px;
+    padding: 0 170px;
+    width: 1920px;
 }
 
-.element{
-    display: table-cell;
+.home .portrait-1 {
+    height: 882px;
+    margin-left: 496px;
+    margin-top: 99px;
+    object-fit: cover;
+    width: 589px;
+}
+
+.home .flex-col {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+    margin-top: 480px;
+    min-width: 310px;
+    width: 315px;
+}
+
+.home .place {
+    color: var(--black);
+    font-family: var(--font-family-Lato);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    height: 121px;
+    letter-spacing: 0;
     text-align: center;
-    vertical-align: middle;
-    background: white;
-    height: 200px; width:200px;
-    color: white; font-size: 2rem;;
+    width: 315px;
 }
 
-/* just aesthetics */
-.container{
-    width:90vw;
-    height: 90vh;
-    border: 3px solid white;
-    margin: auto;
+.home .about {
+    color: #757575;
+    font-family: var(--font-family-Lato);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    height: 121px;
+    letter-spacing: 0;
+    text-align: center;
+    width: 315px;
 }
-  
-body{
-    height: 100vh;
-    display:flex;
-    background: azure;
+
+.home .down-button::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.home .down-button {
+    align-items: flex-end;
+    display: flex;
+    margin-left: 1.0px;
+    min-width: 234px;
+    overflow-y: scroll;
+}
+
+.home .overlap-group1 {
+    height: 68px;
+    margin-bottom: 0;
+    position: relative;
+    width: 234px;
+}
+
+.home .chevron {
+    align-items: flex-start;
+    display: flex;
+    height: 45px;
+    justify-content: flex-end;
+    left: 0;
+    min-width: 234px;
+    position: absolute;
+    top: 0;
+}
+
+.home .overlap-group {
+    height: 47px;
+    margin-top: -1.0px;
+    position: relative;
+    width: 235px;
+}
+
+.home .line-2 {
+    height: 47px;
+    left: 117px;
+    position: absolute;
+    top: 0;
+    width: 118px;
+}
+
+.home .line-1 {
+    height: 46px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 118px;
+}
+
+.home .chevron-1 {
+    align-items: flex-start;
+    display: flex;
+    height: 45px;
+    left: 0;
+    min-width: 234px;
+    position: absolute;
+    top: 23px;
+}
+
+.home .chevron-2 {
+    align-items: flex-start;
+    display: flex;
+    height: 45px;
+    justify-content: flex-end;
+    min-width: 234px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400");
+
+.screen a {
+    display: contents;
+    text-decoration: none;
+}
+
+.container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+}
+
+.container-center-horizontal > * {
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.valign-text-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.listeners-active, .listeners-active * {
+    pointer-events: auto;
+}
+
+.hidden, .hidden * {
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.listeners-active-click, .listeners-active-click * {
+    cursor: pointer;
 }
